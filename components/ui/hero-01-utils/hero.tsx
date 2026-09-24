@@ -1,16 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { Instrument_Serif } from "next/font/google";
 import { Button } from "@/components/ui/button";
 import { motion } from "motion/react";
 import { ArrowUpRight, Star, Search } from "lucide-react";
-
-const instrumentSerif = Instrument_Serif({
-  subsets: ["latin"],
-  weight: ["400"],
-  style: ["italic"],
-});
 
 export type AvatarList = {
   image: string;
@@ -50,9 +43,7 @@ export function HeroSection({
                 className="text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white leading-[1.12]"
               >
                 Akses AI & Tools Premium dengan{" "}
-                <span
-                  className={`${instrumentSerif.className} font-serif italic text-[#136FF5] font-normal tracking-tight`}
-                >
+                <span className="font-serif italic text-[#136FF5] font-normal tracking-tight">
                   resmi & bergaransi
                 </span>
               </motion.h1>

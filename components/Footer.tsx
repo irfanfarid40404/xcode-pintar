@@ -73,11 +73,6 @@ export function Footer() {
                   Kebijakan Pengembalian Dana
                 </a>
               </li>
-              <li>
-                <a href="#bundling" className="hover:text-[#136FF5] transition-colors">
-                  Paket Bundling Hemat
-                </a>
-              </li>
             </ul>
           </div>
 

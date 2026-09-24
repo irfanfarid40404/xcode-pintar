@@ -43,10 +43,6 @@ export default function AgencyHeroSection({
       href: "#katalog",
     },
     {
-      title: "Paket Hemat",
-      href: "#bundling",
-    },
-    {
       title: "Garansi",
       href: "#garansi",
     },

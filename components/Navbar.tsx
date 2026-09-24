@@ -47,9 +47,6 @@ export function Navbar({
             <a href="#katalog" className="hover:text-white transition-colors">
               Katalog Akun
             </a>
-            <a href="#bundling" className="hover:text-white transition-colors">
-              Paket Hemat
-            </a>
             <a href="#garansi" className="hover:text-white transition-colors">
               Garansi & Layanan
             </a>
@@ -115,13 +112,6 @@ export function Navbar({
               className="py-1.5 hover:text-white"
             >
               Katalog Akun
-            </a>
-            <a
-              href="#bundling"
-              onClick={() => setMobileMenuOpen(false)}
-              className="py-1.5 hover:text-white"
-            >
-              Paket Hemat
             </a>
             <a
               href="#garansi"
