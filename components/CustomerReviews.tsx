@@ -7,38 +7,38 @@ export function CustomerReviews() {
     {
       name: "Dimas Aditya",
       role: "Fullstack Developer",
-      product: "Cursor Pro + Gemini Advanced",
+      product: "Gemini Pro Head 18 Bulan",
       date: "Kemarin",
       rating: 5,
       content:
-        "Beli Cursor Pro dan Gemini di sini prosesnya gila cepet banget. Habis scan QRIS gak nyampe semenit kredensial udah dikirim ke WA. Fitur composer jalan lancar tanpa kendala.",
+        "Beli Gemini Pro Head 18 Bulan di sini prosesnya cepet banget. Habis bayar QRIS langsung dapat akun Head + Google One 2TB. Bisa undang anggota tim sendiri dan token 2 jutanya mantap buat olah codebase.",
     },
     {
       name: "Siti Rahmawati",
-      role: "UI/UX Designer",
-      product: "Canva Pro 1 Tahun",
+      role: "UI/UX Designer & Researcher",
+      product: "Gemini Pro Invite 18 Bulan",
       date: "3 hari lalu",
       rating: 5,
       content:
-        "Canva Pro langsung aktif di email pribadi saya sendiri! Template dan Magic Studio kebuka semua. Sangat ngebantu kerjaan klien tanpa harus bayar mahal langganan kartu kredit luar.",
+        "Paket invite 18 bulan langsung aktif di email Google pribadi saya sendiri! Data drive dan email lama tetap aman 100%. Hemat banget cuma 30rb udah aktif 1.5 tahun.",
     },
     {
       name: "Bayu Wicaksono",
-      role: "AI Researcher & Content Creator",
-      product: "ChatGPT Plus & Claude Pro",
+      role: "Content Creator & Data Analyst",
+      product: "Gemini Pro Invite 12 Bulan",
       date: "1 minggu lalu",
       rating: 5,
       content:
-        "Udah 3 bulan langganan Claude Sonnet dan ChatGPT di Code Pintar. Waktu ada kendala reset login, CS langsung respon di WhatsApp dan ganti kredensial dalam 5 menit. Recommended!",
+        "Ambil yang invite 12 bulan cuma 20 ribu. CS ramah dan langsung dipandu sampai invite diterima di inbox Gmail. Fitur Gemini 2.0 Pro lancar jaya.",
     },
     {
       name: "Andi Prasetyo",
       role: "Mahasiswa Informatika",
-      product: "Google Gemini Advanced",
+      product: "Gemini Pro Head 18 Bulan",
       date: "2 minggu lalu",
       rating: 5,
       content:
-        "Konteks 2 juta token Gemini bener-bener berguna buat ngerangkum skripsi dan paper ratusan halaman. Harganya super murah dibanding langganan resmi $20/bulan. Mantap.",
+        "Konteks 2 juta token Gemini bener-bener berguna buat ngerangkum skripsi dan paper ratusan halaman. Harganya cuma 40rb untuk 18 bulan, garansinya juga jelas.",
     },
   ];
 
@@ -81,9 +81,9 @@ export function CustomerReviews() {
                   <CheckCircle className="h-3.5 w-3.5 text-[#136FF5] shrink-0" aria-hidden="true" />
                 </div>
                 <div className="text-[11px] text-zinc-400 mt-0.5">{r.role}</div>
-                <div className="mt-2 inline-block rounded bg-zinc-950 border border-zinc-800 px-2 py-0.5 font-mono text-[10px] text-blue-400">
+                {/* <div className="mt-2 inline-block rounded bg-zinc-950 border border-zinc-800 px-2 py-0.5 font-mono text-[10px] text-blue-400">
                   {r.product}
-                </div>
+                </div> */}
               </div>
             </div>
           ))}

@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { MessageCircle, ShieldCheck, Heart } from "lucide-react";
+import { MessageCircle, Heart } from "lucide-react";
 
 export function Footer() {
   return (
@@ -26,49 +26,28 @@ export function Footer() {
               </span>
             </div>
           </div>
-
-          <div className="flex flex-wrap items-center gap-3 text-xs">
-            <div className="rounded-xl border border-zinc-800 bg-zinc-900/60 px-3 py-1.5 flex items-center gap-2 text-zinc-300">
-              <span className="h-2 w-2 rounded-full bg-[#136FF5] animate-pulse" aria-hidden="true" />
-              <span>Server Pengiriman: Otomatis 24 Jam</span>
-            </div>
-            <div className="rounded-xl border border-zinc-800 bg-zinc-900/60 px-3 py-1.5 flex items-center gap-2 text-zinc-300">
-              <ShieldCheck className="h-3.5 w-3.5 text-[#136FF5]" aria-hidden="true" />
-              <span>Garansi 100% Full Replace</span>
-            </div>
-          </div>
         </div>
 
         {/* Links Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-10 border-b border-zinc-900">
           <div>
             <h4 className="font-semibold text-white text-xs uppercase tracking-wider mb-3">
-              Kategori Populer
+              Paket Gemini Pro
             </h4>
             <ul className="space-y-2.5 text-zinc-400">
               <li>
                 <a href="#katalog" className="hover:text-[#136FF5] transition-colors">
-                  Google Gemini Advanced
+                  Gemini Pro Head 18 Bulan
                 </a>
               </li>
               <li>
                 <a href="#katalog" className="hover:text-[#136FF5] transition-colors">
-                  ChatGPT Plus & o1
+                  Gemini Pro Invite 18 Bulan
                 </a>
               </li>
               <li>
                 <a href="#katalog" className="hover:text-[#136FF5] transition-colors">
-                  Claude 3.5 Sonnet Pro
-                </a>
-              </li>
-              <li>
-                <a href="#katalog" className="hover:text-[#136FF5] transition-colors">
-                  Cursor Pro AI Editor
-                </a>
-              </li>
-              <li>
-                <a href="#katalog" className="hover:text-[#136FF5] transition-colors">
-                  Canva Pro Lifetime / 1 Tahun
+                  Gemini Pro Invite 12 Bulan
                 </a>
               </li>
             </ul>
@@ -121,13 +100,13 @@ export function Footer() {
             <ul className="space-y-2.5 text-zinc-400">
               <li>
                 <a
-                  href="https://wa.me/6281234567890"
+                  href="https://wa.me/6281227153679"
                   target="_blank"
                   rel="noreferrer"
                   className="flex items-center gap-1.5 text-[#136FF5] hover:text-blue-400"
                 >
                   <MessageCircle className="h-3.5 w-3.5 fill-current" aria-hidden="true" />
-                  <span>WhatsApp: +62 812-3456-7890</span>
+                  <span>WhatsApp: +62 812-2715-3679</span>
                 </a>
               </li>
               <li>Jam Operasional: 08.00 - 23.00 WIB</li>

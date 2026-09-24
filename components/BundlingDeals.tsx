@@ -9,60 +9,60 @@ interface BundlingDealsProps {
 export function BundlingDeals({ onBuyBundle }: BundlingDealsProps) {
   const bundles = [
     {
-      id: "ai-power-trio",
-      name: "AI Power Trio (Gemini + ChatGPT + Claude)",
-      tagline: "Kombinasi 3 AI model tercanggih dunia untuk riset, penulisan, dan coding tanpa batas",
-      retailPrice: 1020000,
-      bundlePrice: 159000,
-      duration: "1 Bulan Private",
+      id: "gemini-head-pack",
+      name: "Gemini Pro Head (18 Bulan Family)",
+      tagline: "Paket lengkap akun Master Head 2TB untuk digunakan bersama keluarga atau tim sendiri",
+      retailPrice: 5940000,
+      bundlePrice: 40000,
+      duration: "18 Bulan",
       badge: "Paling Populer",
       items: [
-        "Google Gemini Advanced (2M Token Context + 2TB Drive)",
-        "ChatGPT Plus (GPT-4o, o1-preview, DALL-E 3)",
-        "Claude Pro (Claude 3.5 Sonnet + Artifacts)",
+        "Google Gemini Advanced (2M Token Context)",
+        "Google One 2TB Cloud Storage",
+        "Akses Family Manager / Head Penuh",
       ],
       features: [
-        "Semua akun berstatus Private (bukan sharing)",
-        "Garansi aktif 30 hari penuh",
-        "Pengiriman serentak dalam 60 detik",
+        "Bisa undang anggota keluarga/tim sendiri",
+        "Garansi aktif 18 Bulan (Full Replace)",
+        "Pengiriman akun otomatis < 60 detik",
       ],
     },
     {
-      id: "fullstack-dev-pack",
-      name: "Fullstack Dev Suite (Cursor + Copilot + Gemini)",
-      tagline: "Toolchain coding AI lengkap untuk developer yang ingin melipatgandakan kecepatan sprint",
-      retailPrice: 810000,
-      bundlePrice: 119000,
-      duration: "1 Bulan Private",
-      badge: "Rekomendasi Developer",
+      id: "gemini-invite-18m-pack",
+      name: "Gemini Pro Invite (18 Bulan Email Pribadi)",
+      tagline: "Langganan 1.5 tahun langsung aktif ke email Google pribadi Anda tanpa ribet ganti akun",
+      retailPrice: 5940000,
+      bundlePrice: 30000,
+      duration: "18 Bulan",
+      badge: "Rekomendasi Hemat",
       items: [
-        "Cursor Pro AI Editor (500 fast requests/bln)",
-        "GitHub Copilot Individual (Autocomplete IDE)",
-        "Gemini Advanced (Analisis repositori besar)",
+        "Aktivasi via Invite Resmi ke Gmail Anda",
+        "Google Gemini 1.5 & 2.0 Pro Unlocked",
+        "Data & privasi email lama tetap aman 100%",
       ],
       features: [
-        "Dukungan multi-file composer Cursor",
-        "Kompatibel dengan VS Code, Xcode & JetBrains",
-        "Garansi ganti baru selama 30 hari",
+        "Pakai email Google pribadi Anda sendiri",
+        "Garansi penuh 18 Bulan (Full Replace)",
+        "Tanpa VPN & proses invite instan",
       ],
     },
     {
-      id: "creator-suite",
-      name: "Kreator & Desain Pack (Midjourney + Canva + ChatGPT)",
-      tagline: "Solusi lengkap studio konten: generate visual memukau, edit grafis instan, dan copywriting",
-      retailPrice: 980000,
-      bundlePrice: 129000,
-      duration: "1 Bulan",
-      badge: "Hemat 87%",
+      id: "gemini-invite-12m-pack",
+      name: "Gemini Pro Invite (12 Bulan Email Pribadi)",
+      tagline: "Paket 1 tahun penuh hemat aktivasi invite resmi ke email Google sendiri",
+      retailPrice: 3960000,
+      bundlePrice: 20000,
+      duration: "12 Bulan",
+      badge: "Super Hemat",
       items: [
-        "Midjourney AI Image Generator (Model v6)",
-        "Canva Pro (100Jt+ Aset, Background Remover)",
-        "ChatGPT Plus (Copywriting & Ideasi Konten)",
+        "Aktivasi 1 Tahun Penuh ke Email Pribadi",
+        "Gemini Advanced Context 2 Juta Token",
+        "Integrasi Google Docs, Gmail & Drive",
       ],
       features: [
-        "Lisensi komersial bebas hak cipta",
-        "Canva bisa pakai email pribadi sendiri",
-        "Garansi replace 30 hari",
+        "Cocok untuk mahasiswa, desainer & dev",
+        "Garansi penuh 12 Bulan (Full Replace)",
+        "Bantuan setup CS hingga aktif",
       ],
     },
   ];
@@ -80,10 +80,10 @@ export function BundlingDeals({ onBuyBundle }: BundlingDealsProps) {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white mb-3">
-            Satu Paket. Seluruh AI Tools Favorit Anda.
+            Paket Khusus Gemini Pro Terlengkap
           </h2>
           <p className="text-base text-zinc-300 leading-relaxed">
-            Dapatkan diskon lebih besar dengan memilih paket bundling AI lengkap. Semua akun private, legal, dan langsung aktif otomatis.
+            Pilihan paket akun Head dan Invite resmi langsung aktif dengan garansi penuh penggantian akun.
           </p>
         </div>
 
@@ -111,7 +111,7 @@ export function BundlingDeals({ onBuyBundle }: BundlingDealsProps) {
                   {/* Included items */}
                   <div className="mb-6 space-y-2">
                     <div className="text-[11px] font-semibold text-zinc-300 uppercase tracking-wider">
-                      Termasuk 3 Akun Premium:
+                      Benefit Paket:
                     </div>
                     {b.items.map((item) => (
                       <div
@@ -144,10 +144,9 @@ export function BundlingDeals({ onBuyBundle }: BundlingDealsProps) {
                       </div>
                       <div className="text-2xl font-black text-white font-mono">
                         {formatIdr(b.bundlePrice)}
-                        <span className="text-xs font-normal text-zinc-400 ml-1">/ bln</span>
+                        <span className="text-xs font-normal text-zinc-400 ml-1">/ {b.duration}</span>
                       </div>
                     </div>
-                    <span className="text-[11px] font-mono text-[#136FF5]">Pengiriman Instan</span>
                   </div>
 
                   <button

@@ -42,7 +42,7 @@ export function CartDrawer({
   const [formattedMessage, setFormattedMessage] = useState("");
   const [copiedText, setCopiedText] = useState(false);
 
-  const STORE_WA_NUMBER = "6281234567890"; // Nomor WhatsApp Toko
+  const STORE_WA_NUMBER = "6281227153679"; // Nomor WhatsApp Toko: +62 812-2715-3679
 
   const handleClose = () => {
     if (step === "confirmed") {

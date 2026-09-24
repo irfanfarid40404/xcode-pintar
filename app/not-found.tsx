@@ -37,7 +37,7 @@ export default function NotFound() {
           </Link>
 
           <a
-            href="https://wa.me/6281234567890?text=Halo%20Admin%20Code%20Pintar,%20saya%20tersesat%20di%20halaman%20404"
+            href="https://wa.me/6281227153679?text=Halo%20Admin%20Code%20Pintar,%20saya%20tersesat%20di%20halaman%20404"
             target="_blank"
             rel="noreferrer"
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl border border-zinc-800 bg-zinc-900/80 hover:bg-zinc-800 px-5 py-3 text-xs font-semibold text-zinc-200 transition-colors cursor-pointer focus-visible:ring-2 focus-visible:ring-[#136FF5] focus-visible:outline-none"
@@ -49,31 +49,25 @@ export default function NotFound() {
 
         {/* Quick Links Card */}
         <div className="rounded-2xl border border-zinc-800/80 bg-zinc-900/40 p-5 text-left text-xs space-y-3 pt-4">
-          <div className="font-semibold text-zinc-300">Produk Populer yang Sering Dicari:</div>
+          <div className="font-semibold text-zinc-300">Pilihan Paket Gemini Pro:</div>
           <div className="flex flex-wrap gap-2">
             <Link
               href="/#katalog"
               className="rounded-lg border border-zinc-800 bg-zinc-950 px-3 py-1.5 text-zinc-300 hover:text-white hover:border-zinc-700 transition-colors"
             >
-              Google Gemini Advanced
+              Gemini Pro Head 18 Bulan (Rp 40rb)
             </Link>
             <Link
               href="/#katalog"
               className="rounded-lg border border-zinc-800 bg-zinc-950 px-3 py-1.5 text-zinc-300 hover:text-white hover:border-zinc-700 transition-colors"
             >
-              ChatGPT Plus & o1
+              Gemini Pro Invite 18 Bulan (Rp 30rb)
             </Link>
             <Link
               href="/#katalog"
               className="rounded-lg border border-zinc-800 bg-zinc-950 px-3 py-1.5 text-zinc-300 hover:text-white hover:border-zinc-700 transition-colors"
             >
-              Cursor Pro AI
-            </Link>
-            <Link
-              href="/#katalog"
-              className="rounded-lg border border-zinc-800 bg-zinc-950 px-3 py-1.5 text-zinc-300 hover:text-white hover:border-zinc-700 transition-colors"
-            >
-              Canva Pro 1 Tahun
+              Gemini Pro Invite 12 Bulan (Rp 20rb)
             </Link>
           </div>
         </div>

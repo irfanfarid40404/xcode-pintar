@@ -28,11 +28,9 @@ export function HeroSection({
   onSearchChange,
 }: HeroSectionProps) {
   const popularKeywords = [
-    { label: "Gemini Advanced", query: "Gemini" },
-    { label: "ChatGPT Plus", query: "ChatGPT" },
-    { label: "Claude Pro", query: "Claude" },
-    { label: "Cursor AI", query: "Cursor" },
-    { label: "Canva Pro", query: "Canva" },
+    { label: "Gemini Head 18 Bulan", query: "Head" },
+    { label: "Gemini Invite 18 Bulan", query: "Invite 18" },
+    { label: "Gemini Invite 12 Bulan", query: "Invite 12" },
   ];
 
   return (

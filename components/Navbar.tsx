@@ -66,7 +66,7 @@ export function Navbar({
         <div className="flex items-center gap-2.5">
           {/* WhatsApp CS Fast Consultation */}
           <a
-            href="https://wa.me/6281234567890?text=Halo%20Code%20Pintar,%20mau%20tanya%20akun%20digital"
+            href="https://wa.me/6281227153679?text=Halo%20Code%20Pintar,%20mau%20tanya%20akun%20digital"
             target="_blank"
             rel="noreferrer"
             aria-label="Konsultasi WhatsApp"
@@ -148,7 +148,7 @@ export function Navbar({
 
           <div className="pt-2 border-t border-zinc-800">
             <a
-              href="https://wa.me/6281234567890"
+              href="https://wa.me/6281227153679"
               target="_blank"
               rel="noreferrer"
               className="block w-full text-center py-2 bg-blue-950 border border-blue-800/80 rounded-xl text-xs text-blue-300 font-medium"

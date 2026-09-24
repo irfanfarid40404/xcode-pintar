@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Product, ProductCategory, ProductVariant, PRODUCTS } from "@/types/product";
-import { Zap, ShieldCheck, Check, ShoppingBag, Eye, Filter, Plus } from "lucide-react";
+import { ShieldCheck, Check, ShoppingBag, Eye, Filter, Plus } from "lucide-react";
 
 interface ProductCatalogProps {
   searchQuery: string;
@@ -21,11 +21,9 @@ export function ProductCatalog({
   const [selectedType, setSelectedType] = useState<string>("all");
 
   const categories = [
-    { id: "all", label: "Semua Produk" },
-    { id: "ai", label: "AI & LLM" },
-    { id: "dev", label: "Coding & Dev" },
-    { id: "design", label: "Desain Grafis" },
-    { id: "streaming", label: "Streaming & Hiburan" },
+    { id: "all", label: "Semua Paket Gemini" },
+    { id: "head", label: "Akun Head 18 Bulan" },
+    { id: "invite", label: "Invite Email Sendiri" },
   ];
 
   const filteredProducts = PRODUCTS.filter((p) => {
@@ -35,9 +33,8 @@ export function ProductCatalog({
     }
     // Type match
     if (selectedType !== "all") {
-      if (selectedType === "private" && !p.accountType.includes("Private")) return false;
-      if (selectedType === "sharing" && !p.accountType.includes("Sharing")) return false;
-      if (selectedType === "invite" && !p.accountType.includes("Email Sendiri") && !p.accountType.includes("Invite")) return false;
+      if (selectedType === "head" && !p.accountType.includes("Head")) return false;
+      if (selectedType === "invite" && !p.accountType.includes("Invite") && !p.accountType.includes("Email Sendiri")) return false;
     }
     // Search query match
     if (searchQuery.trim() !== "") {
@@ -108,9 +105,8 @@ export function ProductCatalog({
               className="rounded-xl border border-zinc-800 bg-zinc-900 px-3 py-1.5 text-xs text-zinc-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#136FF5] cursor-pointer"
             >
               <option value="all">Semua Tipe Akun</option>
-              <option value="private">Khusus Private (Akun Baru)</option>
-              <option value="invite">Khusus Email Sendiri (Invite)</option>
-              <option value="sharing">Khusus Sharing (Hemat)</option>
+              <option value="head">Khusus Akun Head (Master)</option>
+              <option value="invite">Khusus Invite Email Sendiri</option>
             </select>
           </div>
         </div>
@@ -150,12 +146,6 @@ export function ProductCatalog({
                         <span className="rounded-md border border-zinc-800 bg-zinc-950 px-2 py-0.5 text-[10px] font-mono text-zinc-400">
                           {product.categoryLabel}
                         </span>
-                        {product.instantDelivery && (
-                          <span className="rounded-md border border-blue-900/60 bg-blue-950/50 px-2 py-0.5 text-[10px] font-mono text-blue-400 flex items-center gap-1">
-                            <Zap className="h-3 w-3 fill-current" aria-hidden="true" />
-                            <span>Instan</span>
-                          </span>
-                        )}
                       </div>
 
                       {product.badgeText && (
