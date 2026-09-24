@@ -1,14 +1,18 @@
 "use client";
 
-import HeroSection, { type AvatarList } from "@/components/ui/hero-01-utils/hero";
-import BrandSlider, { type BrandList } from "@/components/ui/hero-01-utils/brand-slider";
+import HeroSection from "./hero";
+import type { NavigationSection } from "./header";
+import Header from "./header";
+import BrandSlider, { BrandList } from "./brand-slider";
+import type { AvatarList } from "./hero";
 
-interface HeroProps {
-  searchQuery: string;
-  onSearchChange: (q: string) => void;
-}
-
-export function Hero({ searchQuery, onSearchChange }: HeroProps) {
+export default function AgencyHeroSection({
+  searchQuery,
+  onSearchChange,
+}: {
+  searchQuery?: string;
+  onSearchChange?: (q: string) => void;
+}) {
   const avatarList: AvatarList[] = [
     {
       image:
@@ -25,6 +29,34 @@ export function Hero({ searchQuery, onSearchChange }: HeroProps) {
     {
       image:
         "https://cdn.21st.dev/assets/localized/51c9ed392f6e7fce7fd85a78648e3e06bfdcd91999ab5fa48485888231589abf.jpg",
+    },
+  ];
+
+  const navigationData: NavigationSection[] = [
+    {
+      title: "Home",
+      href: "#",
+      isActive: true,
+    },
+    {
+      title: "Katalog Akun",
+      href: "#katalog",
+    },
+    {
+      title: "Paket Hemat",
+      href: "#bundling",
+    },
+    {
+      title: "Garansi",
+      href: "#garansi",
+    },
+    {
+      title: "Ulasan",
+      href: "#ulasan",
+    },
+    {
+      title: "FAQ",
+      href: "#faq",
     },
   ];
 
@@ -67,13 +99,16 @@ export function Hero({ searchQuery, onSearchChange }: HeroProps) {
   ];
 
   return (
-    <div className="relative border-b border-zinc-900">
-      <HeroSection
-        avatarList={avatarList}
-        searchQuery={searchQuery}
-        onSearchChange={onSearchChange}
-      />
-      <BrandSlider brandList={brandList} />
+    <div className="relative">
+      <Header navigationData={navigationData} />
+      <main>
+        <HeroSection
+          avatarList={avatarList}
+          searchQuery={searchQuery}
+          onSearchChange={onSearchChange}
+        />
+        <BrandSlider brandList={brandList} />
+      </main>
     </div>
   );
 }

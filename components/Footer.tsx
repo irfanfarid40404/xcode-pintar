@@ -1,6 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { Sparkles, MessageCircle, ShieldCheck, Heart } from "lucide-react";
+import { MessageCircle, ShieldCheck, Heart } from "lucide-react";
 
 export function Footer() {
   return (
@@ -9,12 +10,16 @@ export function Footer() {
         {/* Top Info Bar */}
         <div className="flex flex-col md:flex-row md:items-center justify-between pb-10 border-b border-zinc-900 gap-6">
           <div className="flex items-center gap-3">
-            <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-emerald-400 text-emerald-950 font-bold">
-              <Sparkles className="h-4 w-4 fill-current" aria-hidden="true" />
+            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-zinc-900 border border-zinc-800 p-1 shadow-md shadow-emerald-500/10">
+              <img
+                src="/icon.png"
+                alt="Code Pintar Icon"
+                className="h-full w-full object-contain"
+              />
             </div>
             <div>
               <span className="text-base font-bold tracking-tight text-white block">
-                PintarStore Indonesia
+                Code Pintar Indonesia
               </span>
               <span className="text-[11px] text-zinc-400">
                 Penyedia Akun AI & Produk Digital Premium Terpercaya
