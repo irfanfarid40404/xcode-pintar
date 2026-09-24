@@ -21,7 +21,7 @@ export function Hero({ searchQuery, onSearchChange }: HeroProps) {
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center relative z-10">
         {/* Headline */}
         <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.12] mb-5">
-          Hello & Tools Premium. <br className="hidden sm:inline" />
+          Akun AI & Tools Premium. <br className="hidden sm:inline" />
           Resmi, murah, langsung aktif.
         </h1>
 
