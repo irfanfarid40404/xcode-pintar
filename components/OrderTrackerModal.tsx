@@ -63,11 +63,11 @@ export function OrderTrackerModal({ isOpen, onClose }: OrderTrackerModalProps) {
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="Contoh: ORD-89421 atau 0812..."
-                className="flex-1 rounded-xl border border-zinc-700 bg-zinc-950 px-3.5 py-2 text-xs text-white placeholder:text-zinc-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
+                className="flex-1 rounded-xl border border-zinc-700 bg-zinc-950 px-3.5 py-2 text-xs text-white placeholder:text-zinc-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#136FF5]"
               />
               <button
                 type="submit"
-                className="inline-flex items-center gap-1.5 rounded-xl bg-white hover:bg-zinc-100 px-4 py-2 text-xs font-bold text-zinc-950 transition-colors cursor-pointer"
+                className="inline-flex items-center gap-1.5 rounded-xl bg-[#136FF5] hover:bg-[#0F65E5] px-4 py-2 text-xs font-bold text-white transition-colors cursor-pointer"
               >
                 <Search className="h-3.5 w-3.5" aria-hidden="true" />
                 <span>Cari</span>
@@ -79,7 +79,7 @@ export function OrderTrackerModal({ isOpen, onClose }: OrderTrackerModalProps) {
             <div className="rounded-2xl border border-zinc-800 bg-zinc-950 p-4 space-y-3 font-mono text-xs animate-in fade-in">
               <div className="flex items-center justify-between border-b border-zinc-800 pb-2">
                 <span className="text-zinc-400">ID: ORD-89421</span>
-                <span className="text-emerald-400 font-bold flex items-center gap-1">
+                <span className="text-[#136FF5] font-bold flex items-center gap-1">
                   <CheckCircle2 className="h-3.5 w-3.5" aria-hidden="true" />
                   LUNAS & AKTIF
                 </span>
@@ -92,19 +92,19 @@ export function OrderTrackerModal({ isOpen, onClose }: OrderTrackerModalProps) {
 
               <div>
                 <div className="text-[10px] text-zinc-500">Kredensial Akun:</div>
-                <div className="text-zinc-200">Email: gemini.pro.id88@pintarstore.my.id</div>
-                <div className="text-emerald-400">Pass: PintarSecure2026!</div>
+                <div className="text-zinc-200">Email: gemini.pro.id88@codepintar.id</div>
+                <div className="text-[#136FF5]">Pass: PintarSecure2026!</div>
               </div>
 
               <div className="flex items-center justify-between text-[11px] pt-2 border-t border-zinc-800 text-zinc-400">
                 <span className="flex items-center gap-1">
-                  <ShieldCheck className="h-3.5 w-3.5 text-emerald-400" aria-hidden="true" />
+                  <ShieldCheck className="h-3.5 w-3.5 text-[#136FF5]" aria-hidden="true" />
                   Garansi Sisa 29 Hari
                 </span>
                 <button
                   type="button"
                   onClick={copyCreds}
-                  className="text-emerald-400 hover:underline cursor-pointer flex items-center gap-1"
+                  className="text-[#136FF5] hover:underline cursor-pointer flex items-center gap-1"
                 >
                   <Copy className="h-3 w-3" aria-hidden="true" />
                   <span>{copied ? "Disalin!" : "Salin Kredensial"}</span>
@@ -119,7 +119,7 @@ export function OrderTrackerModal({ isOpen, onClose }: OrderTrackerModalProps) {
               href="https://wa.me/6281234567890"
               target="_blank"
               rel="noreferrer"
-              className="text-emerald-400 hover:text-emerald-300 font-medium flex items-center gap-1"
+              className="text-[#136FF5] hover:text-blue-400 font-medium flex items-center gap-1"
             >
               <MessageCircle className="h-3 w-3 fill-current" aria-hidden="true" />
               <span>Hubungi CS</span>

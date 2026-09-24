@@ -25,9 +25,9 @@ export function Navbar({
         <div className="flex items-center gap-6">
           <a
             href="#"
-            className="flex items-center gap-2.5 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 rounded-lg"
+            className="flex items-center gap-2.5 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#136FF5] rounded-lg"
           >
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-zinc-900 border border-zinc-800 p-1.5 shadow-md shadow-emerald-500/10 transition-transform group-hover:scale-105">
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-zinc-900 border border-zinc-800 p-1.5 shadow-md shadow-blue-500/10 transition-transform group-hover:scale-105">
               <img
                 src="/icon.png"
                 alt="Code Pintar Icon"
@@ -37,11 +37,8 @@ export function Navbar({
             <div className="flex flex-col">
               <span className="text-base font-bold tracking-tight text-white flex items-center gap-2">
                 Code Pintar
-                {/* <span className="rounded bg-emerald-950/90 text-emerald-400 border border-emerald-800/80 px-1.5 py-0.2 text-[10px] font-mono font-medium">
-                  Verified
-                </span> */}
               </span>
-              {/* <span className="text-[10px] text-zinc-400 font-medium">Digital Account Marketplace</span> */}
+              <span className="text-[10px] text-zinc-400 font-medium">Digital Account Marketplace</span>
             </div>
           </a>
 
@@ -69,11 +66,11 @@ export function Navbar({
         <div className="flex items-center gap-2.5">
           {/* WhatsApp CS Fast Consultation */}
           <a
-            href="https://wa.me/6281234567890?text=Halo%20PintarStore,%20mau%20tanya%20akun%20digital"
+            href="https://wa.me/6281234567890?text=Halo%20Code%20Pintar,%20mau%20tanya%20akun%20digital"
             target="_blank"
             rel="noreferrer"
             aria-label="Konsultasi WhatsApp"
-            className="hidden sm:inline-flex items-center gap-1.5 text-xs text-emerald-400 hover:text-emerald-300 border border-emerald-900/60 rounded-xl px-3 py-2 bg-emerald-950/40 hover:bg-emerald-950/60 transition-colors"
+            className="hidden sm:inline-flex items-center gap-1.5 text-xs text-blue-400 hover:text-blue-300 border border-blue-900/60 rounded-xl px-3 py-2 bg-blue-950/40 hover:bg-blue-950/60 transition-colors"
           >
             <MessageCircle className="h-3.5 w-3.5 fill-current" aria-hidden="true" />
             <span>Bantuan CS</span>
@@ -84,12 +81,12 @@ export function Navbar({
             type="button"
             onClick={onOpenCart}
             aria-label={`Buka Keranjang (${cartCount} item)`}
-            className="inline-flex items-center justify-center gap-2 rounded-xl bg-white hover:bg-zinc-100 px-3.5 py-2 text-xs font-semibold text-zinc-950 transition-all active:scale-[0.98] shadow-sm cursor-pointer focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:outline-none"
+            className="inline-flex items-center justify-center gap-2 rounded-xl bg-white hover:bg-zinc-100 px-3.5 py-2 text-xs font-semibold text-zinc-950 transition-all active:scale-[0.98] shadow-sm cursor-pointer focus-visible:ring-2 focus-visible:ring-[#136FF5] focus-visible:outline-none"
           >
             <ShoppingBag className="h-4 w-4" aria-hidden="true" />
             <span>Keranjang</span>
             {cartCount > 0 && (
-              <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-600 text-[10px] font-bold text-white">
+              <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[#136FF5] text-[10px] font-bold text-white">
                 {cartCount}
               </span>
             )}
@@ -99,7 +96,7 @@ export function Navbar({
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 text-zinc-400 hover:text-white rounded-lg focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:outline-none"
+            className="lg:hidden p-2 text-zinc-400 hover:text-white rounded-lg focus-visible:ring-2 focus-visible:ring-[#136FF5] focus-visible:outline-none"
             aria-label="Buka menu navigasi"
             aria-expanded={mobileMenuOpen}
           >
@@ -154,7 +151,7 @@ export function Navbar({
               href="https://wa.me/6281234567890"
               target="_blank"
               rel="noreferrer"
-              className="block w-full text-center py-2 bg-emerald-950 border border-emerald-800/80 rounded-xl text-xs text-emerald-300 font-medium"
+              className="block w-full text-center py-2 bg-blue-950 border border-blue-800/80 rounded-xl text-xs text-blue-300 font-medium"
             >
               WhatsApp CS
             </a>

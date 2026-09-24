@@ -58,7 +58,7 @@ export function ProductDetailModal({
             <span className="rounded-md border border-zinc-800 bg-zinc-900 px-2 py-0.5 text-xs font-mono text-zinc-300">
               {product.categoryLabel}
             </span>
-            <span className="text-xs font-mono text-emerald-400 flex items-center gap-1">
+            <span className="text-xs font-mono text-[#136FF5] flex items-center gap-1">
               <Zap className="h-3 w-3 fill-current" aria-hidden="true" />
               <span>Pengiriman Otomatis &lt; 60 Dtk</span>
             </span>
@@ -68,7 +68,7 @@ export function ProductDetailModal({
             type="button"
             onClick={onClose}
             aria-label="Tutup detail produk"
-            className="p-1 rounded-lg text-zinc-400 hover:text-white transition-colors cursor-pointer focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:outline-none"
+            className="p-1 rounded-lg text-zinc-400 hover:text-white transition-colors cursor-pointer focus-visible:ring-2 focus-visible:ring-[#136FF5] focus-visible:outline-none"
           >
             <X className="h-5 w-5" aria-hidden="true" />
           </button>
@@ -95,14 +95,14 @@ export function ProductDetailModal({
                     key={v.id}
                     type="button"
                     onClick={() => setSelectedVariant(v)}
-                    className={`p-3 rounded-xl border text-left transition-all cursor-pointer focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:outline-none ${
+                    className={`p-3 rounded-xl border text-left transition-all cursor-pointer focus-visible:ring-2 focus-visible:ring-[#136FF5] focus-visible:outline-none ${
                       isSelected
-                        ? "border-emerald-500 bg-zinc-800/90 shadow-md"
+                        ? "border-[#136FF5] bg-zinc-800/90 shadow-md shadow-blue-500/10"
                         : "border-zinc-800 bg-zinc-950/60 hover:border-zinc-700"
                     }`}
                   >
                     <div className="text-xs font-bold text-white">{v.name}</div>
-                    <div className="text-base font-extrabold text-emerald-400 font-mono mt-1">
+                    <div className="text-base font-extrabold text-[#136FF5] font-mono mt-1">
                       {formatIdr(v.price)}
                     </div>
                     <div className="text-[10px] text-zinc-400 mt-0.5">Tipe: {v.type}</div>
@@ -132,7 +132,7 @@ export function ProductDetailModal({
             </div>
 
             <div className="text-right text-xs font-mono">
-              <div className="text-emerald-400 font-semibold">Tersedia: {product.stock} Akun</div>
+              <div className="text-[#136FF5] font-semibold">Tersedia: {product.stock} Akun</div>
               <div className="text-zinc-400 text-[11px] mt-0.5">Garansi {product.warrantyDays} Hari Penuh</div>
             </div>
           </div>
@@ -145,7 +145,7 @@ export function ProductDetailModal({
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-zinc-300">
               {product.features.map((feat) => (
                 <div key={feat} className="flex items-start gap-2 bg-zinc-950/40 p-2.5 rounded-lg border border-zinc-800/60">
-                  <Check className="h-4 w-4 text-emerald-400 shrink-0 mt-0.5" aria-hidden="true" />
+                  <Check className="h-4 w-4 text-[#136FF5] shrink-0 mt-0.5" aria-hidden="true" />
                   <span>{feat}</span>
                 </div>
               ))}
@@ -155,7 +155,7 @@ export function ProductDetailModal({
           {/* Login & Delivery Instructions */}
           <div className="rounded-xl border border-zinc-800 bg-zinc-950/80 p-4 space-y-2 text-xs">
             <div className="font-semibold text-zinc-200 flex items-center gap-1.5">
-              <Lock className="h-3.5 w-3.5 text-emerald-400" aria-hidden="true" />
+              <Lock className="h-3.5 w-3.5 text-[#136FF5]" aria-hidden="true" />
               <span>Metode Login & Pengiriman:</span>
             </div>
             <p className="text-zinc-400 leading-relaxed">{product.loginMethod}</p>
@@ -172,7 +172,7 @@ export function ProductDetailModal({
                 onAddToCart(product, selectedVariant);
                 onClose();
               }}
-              className="w-full inline-flex items-center justify-center gap-2 rounded-xl border border-zinc-700 bg-zinc-800 hover:bg-zinc-750 py-3 text-sm font-semibold text-white transition-colors cursor-pointer focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:outline-none"
+              className="w-full inline-flex items-center justify-center gap-2 rounded-xl border border-zinc-700 bg-zinc-800 hover:bg-zinc-750 py-3 text-sm font-semibold text-white transition-colors cursor-pointer focus-visible:ring-2 focus-visible:ring-[#136FF5] focus-visible:outline-none"
             >
               <ShoppingBag className="h-4 w-4" aria-hidden="true" />
               <span>+ Tambah ke Keranjang</span>
@@ -184,7 +184,7 @@ export function ProductDetailModal({
                 onBuyNow(product, selectedVariant);
                 onClose();
               }}
-              className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-white hover:bg-zinc-100 py-3 text-sm font-bold text-zinc-950 transition-all active:scale-[0.98] shadow-md cursor-pointer focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:outline-none"
+              className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-[#136FF5] hover:bg-[#0F65E5] py-3 text-sm font-bold text-white transition-all active:scale-[0.98] shadow-md shadow-blue-500/25 cursor-pointer focus-visible:ring-2 focus-visible:ring-[#136FF5] focus-visible:outline-none"
             >
               <span>Beli Sekarang (Langsung Bayar)</span>
               <ArrowRight className="h-4 w-4" aria-hidden="true" />

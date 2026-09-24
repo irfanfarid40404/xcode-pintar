@@ -6,8 +6,8 @@ export default function NotFound() {
     <main className="min-h-screen flex flex-col items-center justify-center bg-zinc-950 text-zinc-100 px-4 py-16 selection:bg-zinc-800 selection:text-white relative">
       <div className="w-full max-w-lg text-center space-y-6">
         {/* Error Code Pill */}
-        <div className="inline-flex items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900/80 px-3.5 py-1 text-xs font-mono text-emerald-400">
-          <span className="flex h-1.5 w-1.5 rounded-full bg-emerald-400" aria-hidden="true" />
+        <div className="inline-flex items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900/80 px-3.5 py-1 text-xs font-mono text-[#136FF5]">
+          <span className="flex h-1.5 w-1.5 rounded-full bg-[#136FF5]" aria-hidden="true" />
           <span>Error 404 · Page Not Found</span>
         </div>
 
@@ -30,19 +30,19 @@ export default function NotFound() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
           <Link
             href="/"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-white hover:bg-zinc-100 px-5 py-3 text-xs font-bold text-zinc-950 transition-all active:scale-[0.98] shadow-md cursor-pointer focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:outline-none"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-[#136FF5] hover:bg-[#0F65E5] px-5 py-3 text-xs font-bold text-white transition-all active:scale-[0.98] shadow-md shadow-blue-500/25 cursor-pointer focus-visible:ring-2 focus-visible:ring-[#136FF5] focus-visible:outline-none"
           >
             <Home className="h-4 w-4" aria-hidden="true" />
             <span>Kembali ke Beranda</span>
           </Link>
 
           <a
-            href="https://wa.me/6281234567890?text=Halo%20Admin%20PintarStore,%20saya%20tersesat%20di%20halaman%20404"
+            href="https://wa.me/6281234567890?text=Halo%20Admin%20Code%20Pintar,%20saya%20tersesat%20di%20halaman%20404"
             target="_blank"
             rel="noreferrer"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl border border-zinc-800 bg-zinc-900/80 hover:bg-zinc-800 px-5 py-3 text-xs font-semibold text-zinc-200 transition-colors cursor-pointer focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:outline-none"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl border border-zinc-800 bg-zinc-900/80 hover:bg-zinc-800 px-5 py-3 text-xs font-semibold text-zinc-200 transition-colors cursor-pointer focus-visible:ring-2 focus-visible:ring-[#136FF5] focus-visible:outline-none"
           >
-            <MessageCircle className="h-4 w-4 text-emerald-400 fill-current" aria-hidden="true" />
+            <MessageCircle className="h-4 w-4 text-[#136FF5] fill-current" aria-hidden="true" />
             <span>Hubungi Bantuan CS</span>
           </a>
         </div>

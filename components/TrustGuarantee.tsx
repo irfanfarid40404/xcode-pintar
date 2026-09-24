@@ -31,7 +31,7 @@ export function TrustGuarantee() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mb-14">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white mb-3">
-            Standar Keamanan & Garansi PintarStore
+            Standar Keamanan & Garansi Code Pintar
           </h2>
           <p className="text-base text-zinc-300 leading-relaxed">
             Kami menjaga reputasi toko dengan menghadirkan akun premium yang stabil, transparan, dan bergaransi penuh.
@@ -47,7 +47,7 @@ export function TrustGuarantee() {
                 className="rounded-2xl border border-zinc-800 bg-zinc-900/40 p-6 flex flex-col justify-between"
               >
                 <div>
-                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-950/80 text-emerald-400 border border-emerald-900/60 mb-4">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-950/80 text-blue-400 border border-blue-900/60 mb-4 shadow-sm shadow-blue-500/10">
                     <Icon className="h-5 w-5" aria-hidden="true" />
                   </div>
                   <h3 className="text-base font-bold text-white mb-2">{g.title}</h3>

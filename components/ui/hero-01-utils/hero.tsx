@@ -38,8 +38,8 @@ export function HeroSection({
   return (
     <section className="relative overflow-hidden pt-8 pb-12 md:pt-14 md:pb-16 bg-zinc-950">
       <div className="w-full h-full relative">
-        {/* Subtle radial emerald backdrop glow */}
-        <div className="absolute inset-0 -top-24 mx-auto max-w-4xl h-96 bg-gradient-to-r from-emerald-900/20 via-emerald-600/10 to-teal-800/20 rounded-full blur-3xl pointer-events-none -z-10" />
+        {/* Subtle radial logo blue backdrop glow */}
+        <div className="absolute inset-0 -top-24 mx-auto max-w-4xl h-96 bg-gradient-to-r from-blue-900/25 via-[#136FF5]/15 to-indigo-900/20 rounded-full blur-3xl pointer-events-none -z-10" />
 
         <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="flex flex-col max-w-5xl mx-auto gap-8 sm:gap-10">
@@ -53,7 +53,7 @@ export function HeroSection({
               >
                 Akses AI & Tools Premium dengan{" "}
                 <span
-                  className={`${instrumentSerif.className} font-serif italic text-emerald-400 font-normal tracking-tight`}
+                  className={`${instrumentSerif.className} font-serif italic text-[#136FF5] font-normal tracking-tight`}
                 >
                   resmi & bergaransi
                 </span>
@@ -77,11 +77,11 @@ export function HeroSection({
               className="flex items-center flex-col md:flex-row justify-center gap-6 sm:gap-8"
             >
               <a href="#katalog" className="cursor-pointer">
-                <Button className="relative text-sm font-bold rounded-full h-12 p-1 ps-6 pe-14 group transition-all duration-500 hover:ps-14 hover:pe-6 w-fit overflow-hidden cursor-pointer bg-emerald-400 text-zinc-950 hover:bg-emerald-300 shadow-lg shadow-emerald-500/20">
+                <Button className="relative text-sm font-bold rounded-full h-12 p-1 ps-6 pe-14 group transition-all duration-500 hover:ps-14 hover:pe-6 w-fit overflow-hidden cursor-pointer bg-[#136FF5] text-white hover:bg-[#0F65E5] shadow-lg shadow-blue-500/25">
                   <span className="relative z-10 transition-all duration-500">
                     Mulai Belanja Akun
                   </span>
-                  <span className="absolute right-1 w-10 h-10 bg-zinc-950 text-emerald-400 rounded-full flex items-center justify-center transition-all duration-500 group-hover:right-[calc(100%-44px)] group-hover:rotate-45">
+                  <span className="absolute right-1 w-10 h-10 bg-zinc-950 text-[#136FF5] rounded-full flex items-center justify-center transition-all duration-500 group-hover:right-[calc(100%-44px)] group-hover:rotate-45">
                     <ArrowUpRight size={18} />
                   </span>
                 </Button>
@@ -122,7 +122,7 @@ export function HeroSection({
                 transition={{ duration: 0.8, delay: 0.3, ease: "easeInOut" }}
                 className="max-w-xl w-full mx-auto"
               >
-                <div className="relative flex items-center shadow-xl rounded-2xl border border-zinc-700/80 bg-zinc-900/90 backdrop-blur-md p-1.5 focus-within:border-emerald-500 transition-colors">
+                <div className="relative flex items-center shadow-xl rounded-2xl border border-zinc-700/80 bg-zinc-900/90 backdrop-blur-md p-1.5 focus-within:border-[#136FF5] transition-colors">
                   <Search className="ml-3 h-5 w-5 text-zinc-400 shrink-0" aria-hidden="true" />
                   <input
                     type="text"
@@ -142,7 +142,7 @@ export function HeroSection({
                   )}
                   <a
                     href="#katalog"
-                    className="hidden sm:inline-flex items-center gap-1.5 rounded-xl bg-emerald-400 hover:bg-emerald-300 px-4 py-2 text-xs font-bold text-emerald-950 transition-colors cursor-pointer"
+                    className="hidden sm:inline-flex items-center gap-1.5 rounded-xl bg-[#136FF5] hover:bg-[#0F65E5] px-4 py-2 text-xs font-bold text-white transition-colors cursor-pointer"
                   >
                     <span>Cari</span>
                     <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />

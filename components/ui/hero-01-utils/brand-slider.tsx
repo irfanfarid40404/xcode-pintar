@@ -45,14 +45,14 @@ export function BrandSlider({
                 {brandList.map((brand, index) => (
                   <div
                     key={`${brand.name}-${index}`}
-                    className="flex items-center gap-3 rounded-xl border border-zinc-800/80 bg-zinc-900/50 px-4 py-2.5 backdrop-blur-sm transition-all hover:border-emerald-500/50 hover:bg-zinc-850/80 group"
+                    className="flex items-center gap-3 rounded-xl border border-zinc-800/80 bg-zinc-900/50 px-4 py-2.5 backdrop-blur-sm transition-all hover:border-[#136FF5]/50 hover:bg-zinc-850/80 group"
                   >
                     <img
                       src={brand.lightimg || brand.image}
                       alt={brand.name}
                       className="h-6 w-auto max-w-[120px] object-contain opacity-75 grayscale contrast-125 transition-all group-hover:opacity-100 group-hover:grayscale-0"
                     />
-                    <span className="text-xs font-semibold tracking-tight text-zinc-400 group-hover:text-emerald-400 transition-colors">
+                    <span className="text-xs font-semibold tracking-tight text-zinc-400 group-hover:text-[#136FF5] transition-colors">
                       {brand.name}
                     </span>
                   </div>

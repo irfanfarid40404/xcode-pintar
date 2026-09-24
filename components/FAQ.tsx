@@ -23,7 +23,7 @@ const FAQS: FAQItem[] = [
   },
   {
     q: "Bagaimana cara klaim garansi jika akun terkena logout atau kendala?",
-    a: "Sangat mudah. Anda cukup membuka fitur 'Cek Pesanan' di website ini atau langsung mengirimkan nomor pesanan ke CS WhatsApp kami. Tim kami akan mengecek dan langsung memberikan akun pengganti (replacement) secara gratis selama masa garansi aktif.",
+    a: "Sangat mudah. Anda cukup mengirimkan nomor pesanan atau bukti transaksi ke CS WhatsApp kami. Tim kami akan mengecek dan langsung memberikan akun pengganti (replacement) secara gratis selama masa garansi aktif.",
   },
   {
     q: "Apakah perlu menggunakan VPN untuk memakai akun ini?",
@@ -65,7 +65,7 @@ export function FAQ() {
                 <button
                   type="button"
                   onClick={() => toggle(idx)}
-                  className="w-full flex items-center justify-between p-5 text-left text-sm sm:text-base font-semibold text-zinc-100 hover:text-white transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
+                  className="w-full flex items-center justify-between p-5 text-left text-sm sm:text-base font-semibold text-zinc-100 hover:text-white transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#136FF5]"
                 >
                   <span className="pr-4">{faq.q}</span>
                   <ChevronDown

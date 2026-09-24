@@ -40,12 +40,12 @@ const HeaderActionBtn = ({
   <a href={href} className="inline-block">
     <Button
       className={cn(
-        "relative text-xs sm:text-sm font-bold rounded-full h-10 p-1 ps-4 pe-12 group transition-all duration-500 hover:ps-12 hover:pe-4 w-fit overflow-hidden cursor-pointer bg-emerald-400 text-zinc-950 hover:bg-emerald-300 shadow-md shadow-emerald-500/20",
+        "relative text-xs sm:text-sm font-bold rounded-full h-10 p-1 ps-4 pe-12 group transition-all duration-500 hover:ps-12 hover:pe-4 w-fit overflow-hidden cursor-pointer bg-[#136FF5] text-white hover:bg-[#0F65E5] shadow-md shadow-blue-500/25",
         className
       )}
     >
       <span className="relative z-10 transition-all duration-500">{text}</span>
-      <span className="absolute right-1 w-8 h-8 bg-zinc-950 text-emerald-400 rounded-full flex items-center justify-center transition-all duration-500 group-hover:right-[calc(100%-36px)] group-hover:rotate-45">
+      <span className="absolute right-1 w-8 h-8 bg-zinc-950 text-[#136FF5] rounded-full flex items-center justify-center transition-all duration-500 group-hover:right-[calc(100%-36px)] group-hover:rotate-45">
         <ArrowUpRight size={16} />
       </span>
     </Button>
@@ -94,7 +94,7 @@ export function Header({
         className={cn(
           "w-full max-w-6xl flex items-center h-fit justify-between gap-4 transition-all duration-500 pointer-events-auto",
           sticky
-            ? "p-2.5 bg-zinc-950/80 backdrop-blur-xl border border-zinc-800 shadow-2xl shadow-emerald-950/20 rounded-full"
+            ? "p-2.5 bg-zinc-950/80 backdrop-blur-xl border border-zinc-800 shadow-2xl shadow-blue-950/20 rounded-full"
             : "bg-zinc-950/40 backdrop-blur-md border border-zinc-800/60 rounded-full p-2.5"
         )}
       >
@@ -104,7 +104,7 @@ export function Header({
             href="#"
             className="flex items-center gap-2.5 px-2 group focus-visible:outline-none"
           >
-            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-zinc-900 border border-zinc-800 p-1 shadow-md shadow-emerald-500/10 transition-transform group-hover:scale-105">
+            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-zinc-900 border border-zinc-800 p-1 shadow-md shadow-blue-500/10 transition-transform group-hover:scale-105">
               <img
                 src="/icon.png"
                 alt="Code Pintar Icon"
@@ -114,7 +114,7 @@ export function Header({
             <div className="flex flex-col">
               <span className="text-sm font-bold tracking-tight text-white flex items-center gap-1.5">
                 {brandName}
-                <span className="rounded bg-emerald-950 text-emerald-400 border border-emerald-800/80 px-1.5 py-0.2 text-[9px] font-mono">
+                <span className="rounded bg-blue-950 text-blue-400 border border-blue-800/80 px-1.5 py-0.2 text-[9px] font-mono">
                   PRO
                 </span>
               </span>
@@ -193,11 +193,11 @@ export function Header({
                             className={cn(
                               "flex items-center py-2 text-base font-semibold transition-all w-full",
                               item.isActive
-                                ? "text-emerald-400"
+                                ? "text-[#136FF5]"
                                 : "text-zinc-400 hover:text-white"
                             )}
                           >
-                            <span className="mr-2 text-emerald-400 font-mono text-xs">/</span>
+                            <span className="mr-2 text-[#136FF5] font-mono text-xs">/</span>
                             {item.title}
                           </NavigationMenuLink>
                         </NavigationMenuItem>
@@ -214,7 +214,7 @@ export function Header({
                   </div>
 
                   <div className="mt-auto pt-6 text-xs text-zinc-500 flex items-center gap-2">
-                    <MessageCircle className="h-3.5 w-3.5 text-emerald-400" />
+                    <MessageCircle className="h-3.5 w-3.5 text-[#136FF5]" />
                     <span>Layanan Otomatis 24 Jam via QRIS</span>
                   </div>
                 </div>

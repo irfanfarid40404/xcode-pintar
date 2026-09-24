@@ -91,7 +91,7 @@ export function CartDrawer({
       )
       .join("\n\n");
 
-    const message = `Halo Admin PintarStore, saya ingin order akun digital via website:
+    const message = `Halo Admin Code Pintar, saya ingin order akun digital via website:
 
 *ID Pesanan:* ${newOrderId}
 
@@ -139,7 +139,7 @@ Mohon dicek dan kirimkan instruksi pembayarannya. Terima kasih!`;
         {/* Drawer Header */}
         <div className="flex items-center justify-between border-b border-zinc-800 px-6 py-4 bg-zinc-950/60">
           <div className="flex items-center gap-2">
-            <span className="h-2 w-2 rounded-full bg-emerald-400" aria-hidden="true" />
+            <span className="h-2 w-2 rounded-full bg-[#136FF5]" aria-hidden="true" />
             <h3 className="text-sm font-bold text-white">
               {step === "cart" ? `Keranjang & Form Pemesanan (${items.length})` : "Pesanan Terhubung ke WhatsApp"}
             </h3>
@@ -149,7 +149,7 @@ Mohon dicek dan kirimkan instruksi pembayarannya. Terima kasih!`;
             type="button"
             onClick={handleClose}
             aria-label="Tutup keranjang"
-            className="p-1 rounded-lg text-zinc-400 hover:text-white transition-colors cursor-pointer focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:outline-none"
+            className="p-1 rounded-lg text-zinc-400 hover:text-white transition-colors cursor-pointer focus-visible:ring-2 focus-visible:ring-[#136FF5] focus-visible:outline-none"
           >
             <X className="h-5 w-5" aria-hidden="true" />
           </button>
@@ -193,7 +193,7 @@ Mohon dicek dan kirimkan instruksi pembayarannya. Terima kasih!`;
                           <h4 className="text-xs font-bold text-white truncate">
                             {item.product.name}
                           </h4>
-                          <div className="text-[11px] text-emerald-400 font-mono">
+                          <div className="text-[11px] text-[#136FF5] font-mono">
                             {item.variant.name} ({item.variant.type})
                           </div>
                           <div className="text-xs font-bold text-zinc-200 font-mono mt-1">
@@ -259,7 +259,7 @@ Mohon dicek dan kirimkan instruksi pembayarannya. Terima kasih!`;
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                         placeholder="Contoh: Budi Santoso"
-                        className="w-full rounded-xl border border-zinc-700 bg-zinc-950 px-3.5 py-2.5 text-xs text-white placeholder:text-zinc-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
+                        className="w-full rounded-xl border border-zinc-700 bg-zinc-950 px-3.5 py-2.5 text-xs text-white placeholder:text-zinc-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#136FF5]"
                       />
                     </div>
 
@@ -274,7 +274,7 @@ Mohon dicek dan kirimkan instruksi pembayarannya. Terima kasih!`;
                         value={whatsapp}
                         onChange={(e) => setWhatsapp(e.target.value)}
                         placeholder="Contoh: 081234567890"
-                        className="w-full rounded-xl border border-zinc-700 bg-zinc-950 px-3.5 py-2.5 text-xs text-white placeholder:text-zinc-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 font-mono"
+                        className="w-full rounded-xl border border-zinc-700 bg-zinc-950 px-3.5 py-2.5 text-xs text-white placeholder:text-zinc-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#136FF5] font-mono"
                       />
                       <span className="text-[10px] text-zinc-400 mt-1 block">
                         Admin akan mengirimkan kredensial akun dan verifikasi ke nomor ini.
@@ -291,7 +291,7 @@ Mohon dicek dan kirimkan instruksi pembayarannya. Terima kasih!`;
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         placeholder="email@gmail.com"
-                        className="w-full rounded-xl border border-zinc-700 bg-zinc-950 px-3.5 py-2.5 text-xs text-white placeholder:text-zinc-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
+                        className="w-full rounded-xl border border-zinc-700 bg-zinc-950 px-3.5 py-2.5 text-xs text-white placeholder:text-zinc-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#136FF5]"
                       />
                     </div>
 
@@ -303,7 +303,7 @@ Mohon dicek dan kirimkan instruksi pembayarannya. Terima kasih!`;
                         id="customer-payment"
                         value={paymentMethod}
                         onChange={(e) => setPaymentMethod(e.target.value)}
-                        className="w-full rounded-xl border border-zinc-700 bg-zinc-950 px-3.5 py-2.5 text-xs text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 cursor-pointer"
+                        className="w-full rounded-xl border border-zinc-700 bg-zinc-950 px-3.5 py-2.5 text-xs text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#136FF5] cursor-pointer"
                       >
                         <option value="QRIS All Payment">QRIS Instant (BCA, GoPay, OVO, Dana, ShopeePay)</option>
                         <option value="Transfer BCA">Transfer Bank BCA</option>
@@ -323,7 +323,7 @@ Mohon dicek dan kirimkan instruksi pembayarannya. Terima kasih!`;
                         value={notes}
                         onChange={(e) => setNotes(e.target.value)}
                         placeholder="Contoh: Tolong proses segera / email canva pribadi saya: ..."
-                        className="w-full rounded-xl border border-zinc-700 bg-zinc-950 px-3.5 py-2 text-xs text-white placeholder:text-zinc-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 resize-none"
+                        className="w-full rounded-xl border border-zinc-700 bg-zinc-950 px-3.5 py-2 text-xs text-white placeholder:text-zinc-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#136FF5] resize-none"
                       />
                     </div>
                   </form>
@@ -335,13 +335,13 @@ Mohon dicek dan kirimkan instruksi pembayarannya. Terima kasih!`;
           {/* STEP 2: CONFIRMED & WHATSAPP REDIRECTION STATE */}
           {step === "confirmed" && (
             <div className="space-y-6">
-              <div className="rounded-2xl border border-emerald-900/60 bg-emerald-950/30 p-5 text-center space-y-2">
-                <div className="mx-auto flex h-11 w-11 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400 mb-1">
+              <div className="rounded-2xl border border-blue-900/60 bg-blue-950/30 p-5 text-center space-y-2">
+                <div className="mx-auto flex h-11 w-11 items-center justify-center rounded-full bg-blue-500/20 text-[#136FF5] mb-1">
                   <CheckCircle2 className="h-6 w-6" aria-hidden="true" />
                 </div>
                 <h4 className="text-base font-bold text-white">Pesanan Siap Dikirim ke WhatsApp!</h4>
                 <p className="text-xs text-zinc-300 leading-relaxed max-w-sm mx-auto">
-                  Data form telah dirangkum ke dalam format pesan resmi WhatsApp untuk Admin PintarStore.
+                  Data form telah dirangkum ke dalam format pesan resmi WhatsApp untuk Admin Code Pintar.
                 </p>
               </div>
 
@@ -357,7 +357,7 @@ Mohon dicek dan kirimkan instruksi pembayarannya. Terima kasih!`;
                 </div>
                 <div className="flex justify-between text-zinc-400">
                   <span>Total Tagihan:</span>
-                  <span className="text-emerald-400 font-bold">{formatIdr(subtotal)}</span>
+                  <span className="text-[#136FF5] font-bold">{formatIdr(subtotal)}</span>
                 </div>
                 <div className="flex justify-between text-zinc-400">
                   <span>Metode Bayar:</span>
@@ -371,7 +371,7 @@ Mohon dicek dan kirimkan instruksi pembayarannya. Terima kasih!`;
                   href={waLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full flex items-center justify-center gap-2 rounded-xl bg-emerald-400 hover:bg-emerald-300 py-3.5 text-sm font-bold text-emerald-950 transition-all shadow-lg cursor-pointer"
+                  className="w-full flex items-center justify-center gap-2 rounded-xl bg-[#136FF5] hover:bg-[#0F65E5] py-3.5 text-sm font-bold text-white transition-all shadow-lg shadow-blue-500/25 cursor-pointer"
                 >
                   <MessageCircle className="h-4 w-4 fill-current" aria-hidden="true" />
                   <span>Buka Chat WhatsApp Sekarang</span>
@@ -425,18 +425,18 @@ Mohon dicek dan kirimkan instruksi pembayarannya. Terima kasih!`;
               </div>
               <div className="flex justify-between text-zinc-400">
                 <span>Biaya Admin & Layanan</span>
-                <span className="text-emerald-400 font-mono">Rp 0 (Gratis)</span>
+                <span className="text-[#136FF5] font-mono">Rp 0 (Gratis)</span>
               </div>
               <div className="pt-2 border-t border-zinc-800 flex justify-between text-sm font-bold text-white">
                 <span>Total Tagihan:</span>
-                <span className="font-mono text-base text-emerald-400">{formatIdr(subtotal)}</span>
+                <span className="font-mono text-base text-[#136FF5]">{formatIdr(subtotal)}</span>
               </div>
             </div>
 
             <button
               type="submit"
               form="wa-checkout-form"
-              className="w-full flex items-center justify-center gap-2 rounded-xl bg-emerald-400 hover:bg-emerald-300 py-3.5 text-sm font-bold text-emerald-950 transition-all active:scale-[0.98] shadow-lg cursor-pointer focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:outline-none"
+              className="w-full flex items-center justify-center gap-2 rounded-xl bg-[#136FF5] hover:bg-[#0F65E5] py-3.5 text-sm font-bold text-white transition-all active:scale-[0.98] shadow-lg shadow-blue-500/25 cursor-pointer focus-visible:ring-2 focus-visible:ring-[#136FF5] focus-visible:outline-none"
             >
               <MessageCircle className="h-4 w-4 fill-current" aria-hidden="true" />
               <span>Kirim Pesanan ke WhatsApp</span>

@@ -97,10 +97,10 @@ export function BundlingDeals({ onBuyBundle }: BundlingDealsProps) {
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="rounded-full bg-emerald-400 text-emerald-950 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider">
+                    <span className="rounded-full bg-[#136FF5] text-white px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider shadow-sm shadow-blue-500/20">
                       {b.badge}
                     </span>
-                    <span className="font-mono text-xs text-emerald-400 font-semibold">
+                    <span className="font-mono text-xs text-[#136FF5] font-semibold">
                       Hemat {savings}%
                     </span>
                   </div>
@@ -118,7 +118,7 @@ export function BundlingDeals({ onBuyBundle }: BundlingDealsProps) {
                         key={item}
                         className="rounded-lg border border-zinc-800/80 bg-zinc-950/60 p-2 text-xs text-zinc-200 flex items-start gap-2"
                       >
-                        <Check className="h-3.5 w-3.5 text-emerald-400 shrink-0 mt-0.5" aria-hidden="true" />
+                        <Check className="h-3.5 w-3.5 text-[#136FF5] shrink-0 mt-0.5" aria-hidden="true" />
                         <span className="font-medium">{item}</span>
                       </div>
                     ))}
@@ -128,7 +128,7 @@ export function BundlingDeals({ onBuyBundle }: BundlingDealsProps) {
                   <div className="space-y-1.5 text-xs text-zinc-400 border-t border-zinc-800/80 pt-4 mb-6">
                     {b.features.map((feat) => (
                       <div key={feat} className="flex items-center gap-2">
-                        <ShieldCheck className="h-3.5 w-3.5 text-emerald-400" aria-hidden="true" />
+                        <ShieldCheck className="h-3.5 w-3.5 text-[#136FF5]" aria-hidden="true" />
                         <span>{feat}</span>
                       </div>
                     ))}
@@ -147,13 +147,13 @@ export function BundlingDeals({ onBuyBundle }: BundlingDealsProps) {
                         <span className="text-xs font-normal text-zinc-400 ml-1">/ bln</span>
                       </div>
                     </div>
-                    <span className="text-[11px] font-mono text-emerald-400">Pengiriman Instan</span>
+                    <span className="text-[11px] font-mono text-[#136FF5]">Pengiriman Instan</span>
                   </div>
 
                   <button
                     type="button"
                     onClick={() => onBuyBundle(b.name, b.bundlePrice, b.items)}
-                    className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-white hover:bg-zinc-100 py-3 text-sm font-bold text-zinc-950 transition-all active:scale-[0.98] shadow-md cursor-pointer focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:outline-none"
+                    className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-[#136FF5] hover:bg-[#0F65E5] py-3 text-sm font-bold text-white transition-all active:scale-[0.98] shadow-md shadow-blue-500/25 cursor-pointer focus-visible:ring-2 focus-visible:ring-[#136FF5] focus-visible:outline-none"
                   >
                     <span>Beli Paket Ini</span>
                     <ArrowRight className="h-4 w-4" aria-hidden="true" />

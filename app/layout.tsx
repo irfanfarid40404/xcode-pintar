@@ -20,9 +20,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "PintarStore — Toko Akun AI & Produk Digital Premium Bergaransi",
+  title: "Code Pintar — Toko Akun AI & Tools Premium Bergaransi",
   description:
-    "Akses resmi dan bergaransi untuk Google Gemini Advanced, ChatGPT Plus, Claude Pro, Cursor Pro, Midjourney, dan Canva Pro. Pengiriman otomatis 24 jam via QRIS & Bank.",
+    "Akses resmi dan bergaransi untuk Google Gemini Advanced, ChatGPT Plus, Claude Pro, Cursor Pro, Midjourney, dan Canva Pro. Pengiriman otomatis via QRIS & Bank.",
   keywords: [
     "jual akun gemini pro",
     "beli gemini advanced murah",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     "produk digital bergaransi",
     "qris akun premium",
   ],
-  authors: [{ name: "PintarStore Indonesia" }],
+  authors: [{ name: "Code Pintar Indonesia" }],
 };
 
 export default function RootLayout({
@@ -46,7 +46,7 @@ export default function RootLayout({
       lang="id"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased dark`}
     >
-      <body className="min-h-full flex flex-col bg-zinc-950 text-zinc-100 selection:bg-emerald-950 selection:text-emerald-300">
+      <body className="min-h-full flex flex-col bg-zinc-950 text-zinc-100 selection:bg-blue-950 selection:text-blue-300">
         {children}
       </body>
     </html>

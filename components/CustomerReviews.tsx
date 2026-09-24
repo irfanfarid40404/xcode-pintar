@@ -29,7 +29,7 @@ export function CustomerReviews() {
       date: "1 minggu lalu",
       rating: 5,
       content:
-        "Udah 3 bulan langganan Claude Sonnet dan ChatGPT di PintarStore. Waktu ada kendala reset login, CS langsung respon di WhatsApp dan ganti kredensial dalam 5 menit. Recommended!",
+        "Udah 3 bulan langganan Claude Sonnet dan ChatGPT di Code Pintar. Waktu ada kendala reset login, CS langsung respon di WhatsApp dan ganti kredensial dalam 5 menit. Recommended!",
     },
     {
       name: "Andi Prasetyo",
@@ -63,7 +63,7 @@ export function CustomerReviews() {
               className="rounded-2xl border border-zinc-800 bg-zinc-900/40 p-6 flex flex-col justify-between"
             >
               <div>
-                <div className="flex items-center gap-1 text-emerald-400 mb-3">
+                <div className="flex items-center gap-1 text-amber-400 mb-3">
                   {[...Array(r.rating)].map((_, i) => (
                     <Star key={i} className="h-3.5 w-3.5 fill-current" aria-hidden="true" />
                   ))}
@@ -78,10 +78,10 @@ export function CustomerReviews() {
               <div className="pt-4 border-t border-zinc-800/80">
                 <div className="text-xs font-bold text-white flex items-center gap-1.5">
                   <span>{r.name}</span>
-                  <CheckCircle className="h-3.5 w-3.5 text-emerald-400 shrink-0" aria-hidden="true" />
+                  <CheckCircle className="h-3.5 w-3.5 text-[#136FF5] shrink-0" aria-hidden="true" />
                 </div>
                 <div className="text-[11px] text-zinc-400 mt-0.5">{r.role}</div>
-                <div className="mt-2 inline-block rounded bg-zinc-950 border border-zinc-800 px-2 py-0.5 font-mono text-[10px] text-emerald-400">
+                <div className="mt-2 inline-block rounded bg-zinc-950 border border-zinc-800 px-2 py-0.5 font-mono text-[10px] text-blue-400">
                   {r.product}
                 </div>
               </div>

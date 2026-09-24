@@ -87,9 +87,9 @@ export function ProductCatalog({
                 key={c.id}
                 type="button"
                 onClick={() => setSelectedCategory(c.id as ProductCategory)}
-                className={`px-3 py-1.5 rounded-xl text-xs font-medium whitespace-nowrap transition-all cursor-pointer focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:outline-none ${
+                className={`px-3 py-1.5 rounded-xl text-xs font-medium whitespace-nowrap transition-all cursor-pointer focus-visible:ring-2 focus-visible:ring-[#136FF5] focus-visible:outline-none ${
                   selectedCategory === c.id
-                    ? "bg-white text-zinc-950 font-bold shadow-sm"
+                    ? "bg-[#136FF5] text-white font-bold shadow-md shadow-blue-500/20"
                     : "border border-zinc-800 bg-zinc-900/60 text-zinc-300 hover:text-white hover:bg-zinc-850"
                 }`}
               >
@@ -105,7 +105,7 @@ export function ProductCatalog({
               value={selectedType}
               onChange={(e) => setSelectedType(e.target.value)}
               aria-label="Filter tipe akun"
-              className="rounded-xl border border-zinc-800 bg-zinc-900 px-3 py-1.5 text-xs text-zinc-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 cursor-pointer"
+              className="rounded-xl border border-zinc-800 bg-zinc-900 px-3 py-1.5 text-xs text-zinc-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#136FF5] cursor-pointer"
             >
               <option value="all">Semua Tipe Akun</option>
               <option value="private">Khusus Private (Akun Baru)</option>
@@ -125,7 +125,7 @@ export function ProductCatalog({
                 setSelectedCategory("all");
                 setSelectedType("all");
               }}
-              className="mt-3 text-xs text-emerald-400 hover:underline"
+              className="mt-3 text-xs text-[#136FF5] hover:underline"
             >
               Reset Semua Filter
             </button>
@@ -151,7 +151,7 @@ export function ProductCatalog({
                           {product.categoryLabel}
                         </span>
                         {product.instantDelivery && (
-                          <span className="rounded-md border border-emerald-900/60 bg-emerald-950/50 px-2 py-0.5 text-[10px] font-mono text-emerald-400 flex items-center gap-1">
+                          <span className="rounded-md border border-blue-900/60 bg-blue-950/50 px-2 py-0.5 text-[10px] font-mono text-blue-400 flex items-center gap-1">
                             <Zap className="h-3 w-3 fill-current" aria-hidden="true" />
                             <span>Instan</span>
                           </span>
@@ -159,7 +159,7 @@ export function ProductCatalog({
                       </div>
 
                       {product.badgeText && (
-                        <span className="rounded-full bg-emerald-400 text-emerald-950 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider">
+                        <span className="rounded-full bg-[#136FF5] text-white px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider shadow-sm shadow-blue-500/20">
                           {product.badgeText}
                         </span>
                       )}
@@ -168,7 +168,7 @@ export function ProductCatalog({
                     {/* Product Title & Tagline */}
                     <h3
                       onClick={() => onSelectProduct(product)}
-                      className="text-lg font-bold text-white group-hover:text-emerald-300 transition-colors cursor-pointer"
+                      className="text-lg font-bold text-white group-hover:text-blue-400 transition-colors cursor-pointer"
                     >
                       {product.name}
                     </h3>
@@ -180,7 +180,7 @@ export function ProductCatalog({
                     <div className="my-4 space-y-1.5 border-t border-b border-zinc-800/80 py-3 text-xs text-zinc-300">
                       {product.features.slice(0, 3).map((f) => (
                         <div key={f} className="flex items-start gap-2">
-                          <Check className="h-3.5 w-3.5 text-emerald-400 shrink-0 mt-0.5" aria-hidden="true" />
+                          <Check className="h-3.5 w-3.5 text-[#136FF5] shrink-0 mt-0.5" aria-hidden="true" />
                           <span className="line-clamp-1">{f}</span>
                         </div>
                       ))}
@@ -189,7 +189,7 @@ export function ProductCatalog({
                     {/* Account Specs Meta */}
                     <div className="flex items-center justify-between text-[11px] text-zinc-400 font-mono mb-4">
                       <span className="flex items-center gap-1">
-                        <ShieldCheck className="h-3.5 w-3.5 text-emerald-400" aria-hidden="true" />
+                        <ShieldCheck className="h-3.5 w-3.5 text-[#136FF5]" aria-hidden="true" />
                         Garansi {product.warrantyDays} Hari
                       </span>
                       <span className="text-zinc-400">
@@ -219,7 +219,7 @@ export function ProductCatalog({
                       </div>
 
                       <div className="text-right text-[10px] font-mono text-zinc-400">
-                        <span className="text-emerald-400 font-medium">Stok: {product.stock} akun</span>
+                        <span className="text-blue-400 font-medium">Stok: {product.stock} akun</span>
                       </div>
                     </div>
 
@@ -228,7 +228,7 @@ export function ProductCatalog({
                       <button
                         type="button"
                         onClick={() => onSelectProduct(product)}
-                        className="col-span-5 inline-flex items-center justify-center gap-1.5 rounded-xl border border-zinc-700 bg-zinc-800/80 hover:bg-zinc-800 py-2.5 text-xs font-semibold text-zinc-200 transition-colors cursor-pointer focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:outline-none"
+                        className="col-span-5 inline-flex items-center justify-center gap-1.5 rounded-xl border border-zinc-700 bg-zinc-800/80 hover:bg-zinc-800 py-2.5 text-xs font-semibold text-zinc-200 transition-colors cursor-pointer focus-visible:ring-2 focus-visible:ring-[#136FF5] focus-visible:outline-none"
                       >
                         <Eye className="h-3.5 w-3.5" aria-hidden="true" />
                         <span>Detail</span>
@@ -239,7 +239,7 @@ export function ProductCatalog({
                         onClick={() => onAddToCart(product, defaultVariant)}
                         title="Tambah ke Keranjang"
                         aria-label="Tambah ke Keranjang"
-                        className="col-span-2 inline-flex items-center justify-center rounded-xl border border-zinc-700 bg-zinc-800/80 hover:bg-zinc-800 py-2.5 text-xs text-zinc-200 transition-colors cursor-pointer focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:outline-none"
+                        className="col-span-2 inline-flex items-center justify-center rounded-xl border border-zinc-700 bg-zinc-800/80 hover:bg-zinc-800 py-2.5 text-xs text-zinc-200 transition-colors cursor-pointer focus-visible:ring-2 focus-visible:ring-[#136FF5] focus-visible:outline-none"
                       >
                         <Plus className="h-4 w-4" aria-hidden="true" />
                       </button>
@@ -247,7 +247,7 @@ export function ProductCatalog({
                       <button
                         type="button"
                         onClick={() => onBuyNow(product, defaultVariant)}
-                        className="col-span-5 inline-flex items-center justify-center gap-1.5 rounded-xl bg-white hover:bg-zinc-100 py-2.5 text-xs font-bold text-zinc-950 transition-all active:scale-[0.98] shadow-sm cursor-pointer focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:outline-none"
+                        className="col-span-5 inline-flex items-center justify-center gap-1.5 rounded-xl bg-[#136FF5] hover:bg-[#0F65E5] py-2.5 text-xs font-bold text-white transition-all active:scale-[0.98] shadow-md shadow-blue-500/20 cursor-pointer focus-visible:ring-2 focus-visible:ring-[#136FF5] focus-visible:outline-none"
                       >
                         <ShoppingBag className="h-3.5 w-3.5" aria-hidden="true" />
                         <span>Beli</span>

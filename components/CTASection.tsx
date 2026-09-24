@@ -20,7 +20,7 @@ export function CTASection({ onOpenCheckout }: CTASectionProps) {
     <section id="get-started" className="relative py-20 md:py-28 overflow-hidden bg-zinc-950 border-b border-zinc-900">
       {/* Background glow */}
       <div
-        className="pointer-events-none absolute bottom-0 left-1/2 -translate-x-1/2 h-[350px] w-[650px] rounded-full opacity-15 blur-[100px] bg-emerald-500"
+        className="pointer-events-none absolute bottom-0 left-1/2 -translate-x-1/2 h-[350px] w-[650px] rounded-full opacity-15 blur-[100px] bg-[#136FF5]"
         aria-hidden="true"
       />
 
@@ -36,7 +36,7 @@ export function CTASection({ onOpenCheckout }: CTASectionProps) {
           <button
             type="button"
             onClick={onOpenCheckout}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-3.5 text-sm font-semibold text-zinc-950 transition-all hover:bg-zinc-100 active:scale-[0.98] shadow-md cursor-pointer focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:outline-none"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-[#136FF5] hover:bg-[#0F65E5] px-6 py-3.5 text-sm font-semibold text-white transition-all active:scale-[0.98] shadow-md shadow-blue-500/25 cursor-pointer focus-visible:ring-2 focus-visible:ring-[#136FF5] focus-visible:outline-none"
           >
             <span>Mulai Uji Coba Gratis</span>
             <ArrowRight className="h-4 w-4" aria-hidden="true" />
@@ -45,16 +45,16 @@ export function CTASection({ onOpenCheckout }: CTASectionProps) {
           {/* CLI Copy Command Box */}
           <div className="w-full sm:w-auto flex items-center justify-between gap-3 rounded-xl border border-zinc-800 bg-zinc-900/80 px-4 py-3 text-xs font-mono text-zinc-300">
             <span className="flex items-center gap-2">
-              <Terminal className="h-3.5 w-3.5 text-emerald-400" aria-hidden="true" />
+              <Terminal className="h-3.5 w-3.5 text-[#136FF5]" aria-hidden="true" />
               <span>npx xcode-pintar init</span>
             </span>
             <button
               type="button"
               onClick={copyCommand}
               aria-label="Salin perintah instalasi"
-              className="p-1 text-zinc-400 hover:text-white transition-colors cursor-pointer rounded focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:outline-none"
+              className="p-1 text-zinc-400 hover:text-white transition-colors cursor-pointer rounded focus-visible:ring-2 focus-visible:ring-[#136FF5] focus-visible:outline-none"
             >
-              {copied ? <Check className="h-3.5 w-3.5 text-emerald-400" aria-hidden="true" /> : <Copy className="h-3.5 w-3.5" aria-hidden="true" />}
+              {copied ? <Check className="h-3.5 w-3.5 text-[#136FF5]" aria-hidden="true" /> : <Copy className="h-3.5 w-3.5" aria-hidden="true" />}
             </button>
           </div>
         </div>
